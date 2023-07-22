@@ -1,0 +1,25 @@
+.main{
+    background-color: black;
+}
+
+.hero-text{
+    color: white;
+}
+
+.static-text{
+    display: flex;
+
+}
+
+.dynamic-text{
+    list-style: none;
+    margin-left: .6rem;
+    // border-right: solid red;
+}
+
+.dynamic-text li{
+    margin: .5rem;
+    color: white;
+    border-right: solid red;
+
+}

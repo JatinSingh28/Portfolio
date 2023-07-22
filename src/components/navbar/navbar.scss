@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .glassContainer {
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.27);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    // justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar * {
+    margin: 2rem 2.5rem;
+  }
+}
