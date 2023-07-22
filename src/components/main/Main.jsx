@@ -5,7 +5,7 @@ import "./main.scss"
 
 export default function Main() {
   return (
-    <div className='main'>
+    <div className='main bg-black h-screen w-screen'>
       <Navbar/>
       <Content/>
     </div>
