@@ -1,7 +1,7 @@
 .hero-txt {
   background-color: #000;
   color: #fff;
-  // mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
   // user-select: none;
 }
 
@@ -9,19 +9,28 @@
   color: #6527BE;
 }
 
-.hero-glow{
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow:
-    0 0 60px 30px #fff,  /* inner white */
-    0 0 100px 60px #f0f, /* middle magenta */
-    0 0 140px 90px #0ff; /* outer cyan */
+.hero-txt{
+  // font-family: 'Pacifico', cursive;
+  // font-family: 'Short Stack', cursive;
+  // font-family: 'Poppins', sans-serif;
+  // font-family: 'Lugrasimo', cursive;
+
 }
 
-.main{
+// .hero-glow{
+  // border-radius: 50%;
+  // background-color: #fff;
+  // box-shadow:
+  //   0 0 10px 20px #fff,  /* inner white */
+  //   0 0 10px 25px #f0f, /* middle magenta */
+  //   0 0 10px 30px #0ff; /* outer cyan */
+// }
+
+// .main{
+  // background-image: `url($(''))`;
   // mix-blend-mode: multiply;
   // user-select: none;
-}
+// }
 
 .bg-video{
   position: absolute;

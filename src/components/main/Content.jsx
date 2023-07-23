@@ -26,25 +26,28 @@ export default function Content() {
 
   return (
     <div className="div-container h-full grid grid-cols-2 place-items-center">
-      <video
-        className="bg-video absolute top-0 left-0 h-screen w-screen -z-10"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="src\assets\gradient-video.mov" type="video/mp4" />
-      </video>
-      <div className="hero-txt-container component text-white flex-col leading-10">
-        <p className=" text-7xl leading-relaxed">
-          Hi. I&apos;m Jatin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
+      <div className="hero-txt-container text-white flex-col leading-10">
+        <div className="relative">
+          <video
+            className="bg-video h-24 min-w-full absolute mt-5"
+            autoPlay
+            loop
+            muted
+          >
+            <source src="src\assets\gradient-video2.mov" type="video/mp4" />
+          </video>
+          <p className="hero-txt min-w-full text-7xl leading-relaxed absoulte">
+            Hi. I&apos;m Jatin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
         <div className=" flex text-5xl ">
-          <p>A</p> <span className="dynamic-txt ms-3 text-purple-500" ref={el} />
+          <p>A</p>{" "}
+          <span className="dynamic-txt ms-3 text-purple-500" ref={el} />
         </div>
       </div>
       <div className="hero-display-container text-white">
         {/* <div className="hero-glow h-10 w-10 bg-white absolute"></div> */}
-        <img className="-mt-16" src={img} alt="svg" />
+        <img className="-mt-16 hero-glow" src={img} alt="svg" />
       </div>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     </div>
