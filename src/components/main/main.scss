@@ -1,12 +1,33 @@
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.hero-txt {
+  background-color: #000;
+  color: #fff;
+  // mix-blend-mode: multiply;
+  // user-select: none;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.dynamic-txt{
+  color: #6527BE;
+}
+
+.hero-glow{
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
+}
+
+.main{
+  // mix-blend-mode: multiply;
+  // user-select: none;
+}
+
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
