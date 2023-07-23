@@ -34,7 +34,7 @@ export default function Content() {
             loop
             muted
           >
-            <source src="src\assets\gradient-video2.mov" type="video/mp4" />
+            <source src="src\assets\gradient-video2.mp4" type="video/mp4" />
           </video>
           <p className="hero-txt min-w-full text-7xl leading-relaxed absoulte">
             Hi. I&apos;m Jatin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
