@@ -1,7 +1,11 @@
 import React from "react";
 import Typed from "typed.js";
+import YouTube from "react-youtube";
 import img from "../../assets/hero-img3.svg";
-// import img from "src/assets/hero-img.jpg"
+import ReactPlayer from 'react-player'
+
+const videoURL =
+  "https://drive.google.com/file/d/1TpTycAr81WYzZYpGMDKc7JSJXL-LuEqH/view?usp=sharing";
 
 export default function Content() {
   const el = React.useRef(null);
@@ -24,10 +28,28 @@ export default function Content() {
     };
   }, []);
 
+  // const opts = {
+  //   height: "390",
+  //   width: "640",
+  //   playerVars: {
+  //     // https://developers.google.com/youtube/player_parameters
+  //     autoplay: 1,
+  //   },
+  // };
+
   return (
     <div className="div-container h-full grid grid-cols-2 place-items-center">
       <div className="hero-txt-container text-white flex-col leading-10">
         <div className="relative">
+          {/* <iframe
+            width="500"
+            height="150"
+            src={videoURL}
+            title="Youtube Player"
+            allowFullScreen
+          /> */}
+          {/* <ReactPlayer className="bg-video h-24 min-w-full absolute mt-5" url='https://youtu.be/3FnVhxP-AzA' /> */}
+          {/* <YouTube videoId="3FnVhxP-AzA" opts={opts} onReady={this._onReady} /> */}
           <video
             className="bg-video h-24 min-w-full absolute mt-5"
             autoPlay
