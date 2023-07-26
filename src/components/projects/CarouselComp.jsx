@@ -5,15 +5,15 @@ import { Carousel } from "react-responsive-carousel";
 export default function CarouselComp({ images }) {
   const [imageSrc, setImageSrc] = useState([]);
 
-  // useEffect(() => {
-  //   const imageArray = [];
-  //   images.map((item) => {
-  //     import(item).then((newImage) => {
-  //       imageArray.push(newImage.default);
-  //       setImageSrc(imageArray);
-  //     });
-  //   });
-  // }, [images]);
+  useEffect(() => {
+    const imageArray = [];
+    images.map((item) => {
+      import(item).then((newImage) => {
+        imageArray.push(newImage.default);
+        setImageSrc(imageArray);
+      });
+    });
+  }, [images]);
 
   return (
     <Carousel
