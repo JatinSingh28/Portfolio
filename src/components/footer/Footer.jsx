@@ -3,7 +3,7 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <div className="footer h-max mt-32 text-white flex gap-80 justify-center pb-16">
+    <div className="footer h-max text-white flex gap-80 justify-center pb-16">
       <div className="flex flex-col text-xl leading-10 mt-16">
         <p className="foot-heading text-4xl mb-5">CONNECT</p>
         <a

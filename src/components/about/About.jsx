@@ -5,7 +5,7 @@ import img from "../../assets/my-image.jpeg";
 import video from "../../assets/gradient-video2.mp4";
 import { Element, scroller } from "react-scroll";
 import Timeline from "./Timeline";
-import experienceData from "./experienceData"
+import experienceData from "./experienceData";
 import "./about.scss";
 
 export default function About() {
@@ -35,35 +35,36 @@ export default function About() {
   return (
     <div className="h-max bg-black absolute">
       <Navbar />
-      <Element name="heading">
+      <div className="pb-36">
         <div className="relative w-full h-max mt-44 flex justify-center">
           <video className="bg-video absolute " autoPlay loop muted>
             <source src={video} type="video/mp4" />
           </video>
-          <p className="about-txt text-white text-9xl flex-grow">
-            I&apos;m Jatin 
+          <p className="about-heading-txt text-white text-9xl flex-grow pb-4">
+            I&apos;m Jatin Singh
           </p>
         </div>
-      </Element>
-      <div className="img-about mt-20">
-        <div className="flex flex-col justify-center items-center ">
-          <img
-            className="my-image rounded-t-full overflow-hidden object-cover"
-            src={img}
-            alt="my image"
-          />
-          {/* <div className="h-12 w-96  bg-white">
+        <div className="img-about mt-20">
+          <div className="flex flex-col justify-center items-center ">
+            <img
+              className="my-image rounded-t-full overflow-hidden object-cover"
+              src={img}
+              alt="my image"
+            />
+            {/* <div className="h-12 w-96  bg-white">
             <p></p>
           </div> */}
+          </div>
+          <div>
+            <p className="text-white text-7xl mt-10 ">
+              Heyoo, This is a brief intro about me
+            </p>
+            <p className="text-white text-7xl mt-10 ">This is more of me </p>
+          </div>
         </div>
-        <div>
-          <p className="text-white text-7xl mt-10 ">
-            Heyoo, This is a brief intro about me
-          </p>
-          <p className="text-white text-7xl mt-10 ">This is more of me </p>
-        </div>
+        {/* <Timeline timelineData={experienceData}/> */}
       </div>
-      {/* <Timeline timelineData={experienceData}/> */}
+
       <Footer />
     </div>
   );
