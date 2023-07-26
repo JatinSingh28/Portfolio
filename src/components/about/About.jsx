@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import img from "../../assets/background.jpg"
 import "./about.scss";
 
 export default function About() {
@@ -10,11 +11,11 @@ export default function About() {
       <div className="flex justify-center">
         <p className="text-white  text-9xl mt-44">I&apos;m Jatin</p>
       </div>
-      <div className="img-about mt-28">
-        <div className="flex flex-col justify-center ">
+      <div className="img-about mt-24">
+        <div className="flex flex-col justify-center items-center ">
           <img
             className="h-96 w-96 rounded-t-full overflow-hidden"
-            src="src\assets\background.jpg"
+            src={img}
             alt="my image"
           />
           <div className="h-12 w-96  bg-white">

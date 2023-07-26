@@ -1,5 +1,34 @@
-.img-about{
-    display: grid;
-    grid-template-columns: 38% 62%;
-    gap: 6rem;
+.img-about {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 6rem;
 }
+
+// .glow-background {
+//   width: 200px;
+//   height: 200px;
+//   background-color: #ffcc00; /* Set your desired background color */
+//   border-radius: 50%; /* To create a circular element, assuming you want a circle */
+
+//   /* Add a box shadow to create the glowing effect */
+//   box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00,
+//     0 0 40px #ffcc00, 0 0 50px #ffcc00;
+
+//   /* Add an animation to make the glow pulsate */
+//   animation: glowing 2s ease-in-out infinite;
+// }
+
+// @keyframes glowing {
+//   0% {
+//     box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00,
+//       0 0 40px #ffcc00, 0 0 50px #ffcc00;
+//   }
+//   50% {
+//     box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00,
+//       0 0 50px #ffcc00, 0 0 60px #ffcc00;
+//   }
+//   100% {
+//     box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00,
+//       0 0 40px #ffcc00, 0 0 50px #ffcc00;
+//   }
+// }
