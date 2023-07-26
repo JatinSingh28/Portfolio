@@ -1,7 +1,7 @@
 const data = [
   {
     name: "AI Eyes",
-    images: ["src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png"],
+    images: ["../../assets/background.jpg","../../assets/background.jpg","../../assets/background.jpg"],
     features: ["abc", "asdf", "ASDF"],
     github: "https://www.google.com",
     live: "www.leetcode.com",

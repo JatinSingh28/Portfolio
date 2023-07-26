@@ -2,6 +2,8 @@ import React, { useState, useRef, Component } from "react";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import "./style-pro.scss";
+import crossIcon from "../../assets/cross-icon.png"
+import bulletPoint from "../../assets/bullet-point.png"
 import CarouselComp from "./CarouselComp";
 
 export default function Project1({
@@ -74,7 +76,7 @@ export default function Project1({
                 <div key={index} className="flex">
                   <img
                     className="h-5"
-                    src="src\assets\bullet-point.png"
+                    src={bulletPoint}
                     alt="*"
                   />
                   <p className="font-bold whitespace-normal ml-2" key={index}>
@@ -115,7 +117,7 @@ export default function Project1({
         <img
           className="h-8 absolute top-3 right-3 cursor-pointer"
           onClick={closeModal}
-          src="src\assets\cross-icon.png"
+          src={crossIcon}
           alt="cross-icon"
         />
       </Modal>

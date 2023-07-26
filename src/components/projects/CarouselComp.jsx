@@ -1,16 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 export default function CarouselComp({ images }) {
+  const [imageSrc, setImageSrc] = useState([]);
+
+  // useEffect(() => {
+  //   const imageArray = [];
+  //   images.map((item) => {
+  //     import(item).then((newImage) => {
+  //       imageArray.push(newImage.default);
+  //       setImageSrc(imageArray);
+  //     });
+  //   });
+  // }, [images]);
+
   return (
-    <Carousel autoPlay interval={2500} infiniteLoop axis="vertical" verticalSwipe="natural" showIndicators>
-      {images.map((item, index) => (
+    <Carousel
+      autoPlay
+      interval={2500}
+      infiniteLoop
+      axis="vertical"
+      verticalSwipe="natural"
+      showIndicators
+    >
+      {imageSrc.map((item, index) => (
         <div key={index}>
-          <img key={index} className="carousel-image" src={item} alt="project-image" />
+          <img
+            className="carousel-image"
+            src={item}
+            alt="project-image"
+          />
           <p className="legend">Legend 1</p>
         </div>
       ))}
+      {/* {images.map((item, index) => (
+        <div key={index}>
+          <img
+            className="carousel-image"
+            src={item}
+            alt="project-image"
+          />
+          <p className="legend">Legend 1</p>
+        </div>
+      ))} */}
     </Carousel>
   );
 }
