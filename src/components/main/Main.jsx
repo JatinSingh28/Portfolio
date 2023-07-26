@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Content from "./Content";
-// import Projects from '../projects/Projects'
 import Footer from "../footer/Footer";
 import Projects from "../projects/ProjectsMain";
+import Skills from "../skills/skills";
 import "./main.scss";
 
 export default function Main() {
@@ -11,6 +11,7 @@ export default function Main() {
     <div className="main bg-black h-screen">
       <Navbar />
       <Content />
+      <Skills />
       <Projects />
       <Footer />
     </div>

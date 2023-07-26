@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../navbar/Navbar";
-import Project from "./ProjectComp";
+import ProjectComp from "./ProjectComp";
 import Footer from "../footer/Footer";
 import "./style-pro.scss";
 import data from "./projectData";
@@ -12,9 +12,10 @@ export default function Projects() {
 
       <div className="grid grid-cols-3 px-16 pt-28 gap-8 pb-36">
         {data.map((item, index) => (
-          <Project
+          <ProjectComp
             key={index}
             name={item.name}
+            image={item.image}
             images={item.images}
             features={item.features}
             github={item.github}

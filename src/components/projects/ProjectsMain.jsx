@@ -11,6 +11,7 @@ export default function Projects() {
           <Project
             key={index}
             name={item.name}
+            image={item.image}
             images={item.images}
             features={item.features}
             github={item.github}

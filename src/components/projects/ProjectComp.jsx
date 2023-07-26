@@ -1,13 +1,14 @@
-import React, { useState, useRef, Component } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import "./style-pro.scss";
-import crossIcon from "../../assets/cross-icon.png"
-import bulletPoint from "../../assets/bullet-point.png"
+import crossIcon from "../../assets/cross-icon.png";
+import bulletPoint from "../../assets/bullet-point.png";
 import CarouselComp from "./CarouselComp";
 
-export default function Project1({
+export default function ProjectComp({
   name,
+  image,
   images,
   features,
   live,
@@ -45,14 +46,31 @@ export default function Project1({
       overflow: "hidden",
     },
   };
+  // console.log(name,image);
+  const [img, setImg] = useState();
+  useEffect(() => {
+    import(image).then((newimage) => {
+      setImg(newimage.default);
+    });
+  }, [image]);
 
   return (
     <div
       className="pro-comp h-96 rounded-3xl cursor-pointer"
       onClick={!isModalOpen ? openModal : dummyFunc}
     >
-      <div className="card h-96 ">
-        <h1>AI Glasses</h1>
+      <div className="card h-96 rounded-2xl custom-cursor">
+        <div className="flex justify-center align-center h-[65%]">
+          <img
+            src={img}
+            className="h-full w-[80%] rounded-lg mt-4"
+            alt="project-image"
+          />
+        </div>
+        <div className="flex justify-center font-bold">
+          <p className="text-2xl mt-7 uppercase">{name}</p>
+        </div>
+        <p className="mx-4 mt-2 text-lg">About the poject why my proj is good </p>
       </div>
       <Modal
         isOpen={isModalOpen}
@@ -74,11 +92,7 @@ export default function Project1({
             <div className="ml-12 leading-7">
               {features.map((item, index) => (
                 <div key={index} className="flex">
-                  <img
-                    className="h-5"
-                    src={bulletPoint}
-                    alt="*"
-                  />
+                  <img className="h-5" src={bulletPoint} alt="*" />
                   <p className="font-bold whitespace-normal ml-2" key={index}>
                     {item}
                   </p>
