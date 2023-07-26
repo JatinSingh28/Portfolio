@@ -56,10 +56,12 @@ export default function About() {
           </div> */}
           </div>
           <div>
-            <p className="text-white text-7xl mt-10 ">
+            <p className="text-white text-7xl mt-10 leading-snug ">
               Heyoo, This is a brief intro about me
             </p>
-            <p className="text-white text-7xl mt-10 ">This is more of me </p>
+            <p className="text-white text-5xl mt-10 leading-tight">
+              This is more about me. Writing anything to fill up space for now.
+            </p>
           </div>
         </div>
         {/* <Timeline timelineData={experienceData}/> */}
