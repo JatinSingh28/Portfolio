@@ -57,8 +57,6 @@ export default function Project1({
         onRequestClose={closeModal}
         contentLabel="Example Modal"
         style={modalStyles}
-        // className="modal-content"
-        // overlayClassName="modal-overlay"
       >
         <div className="grid-container">
           <div className="image">
