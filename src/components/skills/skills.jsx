@@ -16,12 +16,14 @@ export default function Skills() {
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
         className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
       >
-        <div className="skill-container flex gap-5 px-9">
+        <div className="flex gap-5 px-9">
           <div className="w-full lgl:w-1/2">
             <div className="py-12 font-titleFont flex flex-col gap-4">
-              <h2 className="text-3xl md:text-4xl font-bold">Web Development</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Web Development
+              </h2>
             </div>
-            <div className='className="mt-14 w-full flex flex-col gap-6'>
+            <div className="w-full flex flex-col gap-6">
               {/* {data.map((item, index) => (
                 <div key={index} className="overflow-x-hidden">
                   <p className="text-sm uppercase font-medium">{item.skill}</p>
@@ -50,9 +52,7 @@ export default function Skills() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
                   >
-                    <span className="absolute -top-7 right-0">
-                      85%
-                    </span>
+                    <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>
                 </span>
               </div>
@@ -65,9 +65,7 @@ export default function Skills() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className={`w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
                   >
-                    <span className="absolute -top-7 right-0">
-                      95%
-                    </span>
+                    <span className="absolute -top-7 right-0">95%</span>
                   </motion.span>
                 </span>
               </div>
@@ -80,9 +78,7 @@ export default function Skills() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
                   >
-                    <span className="absolute -top-7 right-0">
-                      85%
-                    </span>
+                    <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>
                 </span>
               </div>
@@ -100,9 +96,7 @@ export default function Skills() {
                 </span>
               </div>
               <div className="overflow-x-hidden">
-                <p className="text-sm uppercase font-medium">
-                  ExpressJS
-                </p>
+                <p className="text-sm uppercase font-medium">ExpressJS</p>
                 <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
@@ -123,9 +117,7 @@ export default function Skills() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
                   >
-                    <span className="absolute -top-7 right-0">
-                      85%
-                    </span>
+                    <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>
                 </span>
               </div>
@@ -152,7 +144,7 @@ export default function Skills() {
               </h2>
             </div>
             <div className="flex flex-col gap-6">
-            {/* {data.map((item, index) => (
+              {/* {data.map((item, index) => (
                 <div key={index} className="overflow-x-hidden">
                   <p className="text-sm uppercase font-medium">{item.skill}</p>
                   <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
@@ -172,7 +164,9 @@ export default function Skills() {
                 </div>
               ))} */}
               <div className="overflow-x-hidden">
-                <p className="text-sm uppercase font-medium">Data Preprocessing</p>
+                <p className="text-sm uppercase font-medium">
+                  Data Preprocessing
+                </p>
                 <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
@@ -224,7 +218,9 @@ export default function Skills() {
                 </span>
               </div>
               <div className="overflow-x-hidden">
-                <p className="text-sm uppercase font-medium">Exploratory Data Analyis</p>
+                <p className="text-sm uppercase font-medium">
+                  Exploratory Data Analyis
+                </p>
                 <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
@@ -237,7 +233,9 @@ export default function Skills() {
                 </span>
               </div>
               <div className="overflow-x-hidden">
-                <p className="text-sm uppercase font-medium">Data Visualization</p>
+                <p className="text-sm uppercase font-medium">
+                  Data Visualization
+                </p>
                 <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
