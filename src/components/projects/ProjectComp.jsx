@@ -56,10 +56,9 @@ export default function ProjectComp({
 
   return (
     <div
-      className="pro-comp h-96 rounded-3xl cursor-pointer"
+      className="pro-comp h-96 rounded-3xl cursor-pointer custom-cursor text-white border-cyan-500 border-4"
       onClick={!isModalOpen ? openModal : dummyFunc}
     >
-      <div className="card h-96 rounded-2xl custom-cursor">
         <div className="flex justify-center align-center h-[65%]">
           <img
             src={img}
@@ -71,7 +70,6 @@ export default function ProjectComp({
           <p className="text-2xl mt-7 uppercase">{name}</p>
         </div>
         <p className="mx-4 mt-2 text-lg">About the poject why my proj is good </p>
-      </div>
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}

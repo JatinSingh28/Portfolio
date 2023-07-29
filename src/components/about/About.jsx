@@ -3,7 +3,6 @@ import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import img from "../../assets/my-image.jpeg";
 import video from "../../assets/gradient-video2.mp4";
-import { Element, scroller } from "react-scroll";
 import Timeline from "./Timeline.jsx";
 // import Scene from "./Scene";
 // import experienceData from "./experienceData";

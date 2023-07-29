@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 export default function Navbar() {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+  
   return (
     <div className="navbar absolute ">
       <div className="glassContainer text-white text-2xl">
@@ -12,7 +19,7 @@ export default function Navbar() {
         <Link to="https://drive.google.com/file/d/1lkPzVzonaLlzcMb9EwhNIorVJkhKyMKz/view" target="_blank" rel="noopener noreferrer">
           Resume
         </Link>
-        <Link>Contact</Link>
+        <Link onClick={scrollToBottom}>Contact</Link>
       </div>
     </div>
   );

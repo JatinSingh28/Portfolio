@@ -7,7 +7,7 @@ import data from "./projectData";
 
 export default function Projects() {
   return (
-    <div className="container bg-black  h-fit ">
+    <div className="proj-container bg-black  h-fit ">
       <Navbar />
 
       <div className="grid grid-cols-3 px-16 pt-28 gap-8 pb-36">
