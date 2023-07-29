@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import "./timeline.js";
 gsap.registerPlugin(ScrollTrigger);
+import video from "../../assets/gradient-video2.mp4";
 
 export default function Timeline() {
   const containerRef = useRef(null);
@@ -127,7 +128,16 @@ export default function Timeline() {
         <div className="slider flex gap-10 pt-10" ref={slider}>
           <div className="flex flex-col">
             <div className="flex flex-col">
-              <p className="text-7xl pl-16">Experience</p>
+              {/* <p className="text-7xl pl-16">Experience</p> */}
+              <div className="relative w-full h-max mt-10 ">
+                <video className="bg-video absolute " autoPlay loop muted>
+                  <source src={video} type="video/mp4" />
+                </video>
+                <p className="exp-txt text-white text-7xl flex-grow pb-4">
+                  Experience
+                </p>
+              </div>
+
               <svg
                 className="pt-16 pb-16 pl-16"
                 viewBox="0 0 900 10"
