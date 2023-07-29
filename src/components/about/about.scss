@@ -17,36 +17,77 @@
   width: 30rem;
 }
 
-/* Timeline.css */
+.item{
+  height: 40rem;
+  width: 20rem;
+  color: white;
+}
 
-.timeline-container {
+//timeline
+
+.wrapper {
   overflow-x: hidden;
+  position: relative;
 }
 
-.timeline {
+svg {
+  position: absolute;
+  top: 12em;
+  left: 10vw;
+  width: 50vw;
+
+  .mask {
+      width: 0;
+  }
+}
+
+.container {
   display: flex;
-  transition: transform 0.3s ease; /* Smooth transition for scroll effect */
+  width: 300vw;
+
+  .col {
+      display: flex;
+      gap: 3em;
+      
+      p {
+          font-size: .8rem;
+      }
+  }
+
+  section {
+      width: 100vw;
+      padding: 20vw 10vw;
+
+      h1 {
+          font-size: 3rem;
+          margin: 0;
+      }
+
+      p {
+          font-size: 1.2rem;
+          width: 50vw;
+      }
+
+      ul {
+          list-style-type: none;
+          display: flex;
+          gap: 3em;
+          width: 100%;
+          height: 300px;
+          padding: 0;
+
+          li {
+              background: white;
+              border-radius: .3em;
+              flex-grow: 1;
+          }
+      }
+
+  }
 }
 
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px; /* Set the width of each timeline item */
+section {
+  height: 100vh;
+
 }
 
-.timeline-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #007bff; /* Customize the color of the timeline dot */
-  border-radius: 50%;
-  margin-top: 10px;
-}
-
-.timeline-content {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}

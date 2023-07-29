@@ -4,14 +4,14 @@ import Footer from "../footer/Footer";
 import img from "../../assets/my-image.jpeg";
 import video from "../../assets/gradient-video2.mp4";
 import { Element, scroller } from "react-scroll";
-import Timeline from "./Timeline";
-import experienceData from "./experienceData";
+import Timeline from "./Timeline.jsx";
+// import experienceData from "./experienceData";
 import "./about.scss";
 
 export default function About() {
   useEffect(() => {
     const targetPosition = 140;
-    const duration = 1000;
+    const duration = 500;
 
     const startTime = performance.now();
     const scrollStep = (timestamp) => {
@@ -24,7 +24,6 @@ export default function About() {
         window.requestAnimationFrame(scrollStep);
       }
     };
-
     window.requestAnimationFrame(scrollStep);
   }, []);
 
@@ -64,7 +63,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        {/* <Timeline timelineData={experienceData}/> */}
+        <Timeline />
       </div>
 
       <Footer />
