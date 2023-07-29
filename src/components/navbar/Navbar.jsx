@@ -3,7 +3,7 @@ import "./navbar.scss";
 
 export default function Navbar() {
   return (
-    <div className="navbar absolute">
+    <div className="navbar absolute ">
       <div className="glassContainer text-white text-2xl">
         <Link to="/">Home</Link>
         {/* <Link to="/projects">Work</Link> */}
