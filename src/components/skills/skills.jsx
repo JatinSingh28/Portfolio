@@ -45,12 +45,12 @@ export default function Skills() {
               ))} */}
               <div className="overflow-x-hidden">
                 <p className="text-sm uppercase font-medium">JavaScript</p>
-                <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                <span className="w-full h-2 bg-opacity-100 rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
+                    className={"w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"}
                   >
                     <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>
@@ -63,7 +63,7 @@ export default function Skills() {
                     initial={{ x: "-100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className={`w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
+                    className={"w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"}
                   >
                     <span className="absolute -top-7 right-0">95%</span>
                   </motion.span>
@@ -76,7 +76,7 @@ export default function Skills() {
                     initial={{ x: "-100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
+                    className={"w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"}
                   >
                     <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>
@@ -84,7 +84,7 @@ export default function Skills() {
               </div>
               <div className="overflow-x-hidden">
                 <p className="text-sm uppercase font-medium">NodeJS</p>
-                <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                <span className="w-full h-2 bg-opacity-100 rounded-md inline-flex mt-2">
                   <motion.span
                     initial={{ x: "-100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -115,7 +115,7 @@ export default function Skills() {
                     initial={{ x: "-100%", opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    className={`w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
+                    className={"w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"}
                   >
                     <span className="absolute -top-7 right-0">85%</span>
                   </motion.span>

@@ -5,6 +5,7 @@ import "./style-pro.scss";
 import crossIcon from "../../assets/cross-icon.png";
 import bulletPoint from "../../assets/bullet-point.png";
 import CarouselComp from "./CarouselComp";
+import img1 from "./project_images/background.jpg";
 
 export default function ProjectComp({
   name,
@@ -48,8 +49,12 @@ export default function ProjectComp({
   };
   // console.log(name,image);
   const [img, setImg] = useState();
+  function importLocal(path) {
+    return import(path);
+  }
   useEffect(() => {
-    import(image).then((newimage) => {
+    const res = importLocal(image);
+    res.then((newimage) => {
       setImg(newimage.default);
     });
   }, [image]);
@@ -59,17 +64,17 @@ export default function ProjectComp({
       className="pro-comp h-96 rounded-3xl cursor-pointer custom-cursor text-white border-cyan-500 border-4"
       onClick={!isModalOpen ? openModal : dummyFunc}
     >
-        <div className="flex justify-center align-center h-[65%]">
-          <img
-            src={img}
-            className="h-full w-[80%] rounded-lg mt-4"
-            alt="project-image"
-          />
-        </div>
-        <div className="flex justify-center font-bold">
-          <p className="text-2xl mt-7 uppercase">{name}</p>
-        </div>
-        <p className="mx-4 mt-2 text-lg">About the poject why my proj is good </p>
+      <div className="flex justify-center align-center h-[65%]">
+        <img
+          src={img}
+          className="h-full w-[80%] rounded-lg mt-4"
+          alt="project-image"
+        />
+      </div>
+      <div className="flex justify-center font-bold">
+        <p className="text-2xl mt-7 uppercase">{name}</p>
+      </div>
+      <p className="mx-4 mt-2 text-lg">About the poject why my proj is good </p>
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}

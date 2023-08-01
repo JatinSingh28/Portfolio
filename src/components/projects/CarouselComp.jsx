@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
 
 export default function CarouselComp({ images }) {
   const [imageSrc, setImageSrc] = useState([]);
 
+  function importLocal(path){
+    return import(path);
+  }
+
   useEffect(() => {
     const imageArray = [];
     images.map((item) => {
-      import(item).then((newImage) => {
+      const img = importLocal(item);
+      // console.log(img.default);
+      // imageArray.push(img);
+      // setImageSrc(imageArray);
+      img.then((newImage) => {
         imageArray.push(newImage.default);
         setImageSrc(imageArray);
       });
