@@ -1,7 +1,9 @@
 import React from "react";
 import Typed from "typed.js";
 import img from "../../assets/hero-img3.svg";
+// import img2 from "../../assets/"
 import video from "../../assets/gradient-video2.mp4"
+import HeroIllustration from "./HeroIllustration";
 
 export default function Content() {
   const el = React.useRef(null);
@@ -47,7 +49,8 @@ export default function Content() {
       </div>
       <div className="hero-display-container text-white">
         {/* <div className="hero-glow h-10 w-10 bg-white absolute"></div> */}
-        <img className="-mt-16 hero-glow" src={img} alt="svg" />
+        {/* <img className="-mt-16 hero-glow" src={img} alt="svg" /> */}
+        <HeroIllustration/>
       </div>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     </div>

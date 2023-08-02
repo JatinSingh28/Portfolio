@@ -11,7 +11,7 @@ const data = [
   {
     name: "Realtime Chat Application",
     image:"../../assets/background.jpg",
-    images: ["src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png"],
+    images: ["../../assets/background.jpg","../../assets/background.jpg","../../assets/background.jpg"],
     features: ["abc", "asdf", "ASDF"],
     github: "www.google.com",
     live: "www.leetcode.com",
@@ -20,7 +20,7 @@ const data = [
   {
     name: "Yoga pose Classifier",
     image:"../../assets/background.jpg",
-    images: ["src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png"],
+    images: ["../../assets/background.jpg","../../assets/background.jpg","../../assets/background.jpg"],
     features: ["abc", "asdf", "ASDF"],
     github: "www.google.com",
     live: "www.leetcode.com",
@@ -29,7 +29,7 @@ const data = [
   {
     name: "AI Eyes",
     image:"../../assets/background.jpg",
-    images: ["src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png"],
+    images: ["../../assets/background.jpg","../../assets/background.jpg","../../assets/background.jpg"],
     features: ["abc", "asdf", "ASDF"],
     github: "https://www.google.com",
     live: "www.leetcode.com",
@@ -38,7 +38,7 @@ const data = [
   {
     name: "AI Eyes",
     image:"../../assets/background.jpg",
-    images: ["src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png","src\\assets\\favicon-owl.png"],
+    images: ["../../assets/background.jpg","../../assets/background.jpg","../../assets/background.jpg"],
     features: ["abc", "asdf", "ASDF"],
     github: "www.google.com",
     live: "www.leetcode.com",
