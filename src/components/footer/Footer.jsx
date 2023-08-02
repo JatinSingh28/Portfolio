@@ -3,8 +3,8 @@ import "./footer.scss";
 
 export default function Footer() {
   return (
-    <div className="footer h-max text-white flex gap-80 justify-center pb-16">
-      <div className="flex flex-col text-xl leading-10 mt-16">
+    <div className="footer h-max text-white flex gap-80 justify-center pb-16 ">
+      <div className="flex flex-col text-xl leading-[2] mt-16">
         <p className="foot-heading text-4xl mb-5">CONNECT</p>
         <a
           href="https://www.linkedin.com/in/jatinsingh28/"
@@ -28,7 +28,7 @@ export default function Footer() {
           CV
         </a>
       </div>
-      <div className="flex flex-col text-xl leading-10 mt-16">
+      <div className="flex flex-col text-xl leading-[2] mt-16">
         <p className="foot-heading text-4xl mb-5">ELSEWHERE</p>
         <a
           href="https://codeforces.com/profile/jatin_singh28"
@@ -59,7 +59,7 @@ export default function Footer() {
           Instagram
         </a>
       </div>
-      <div className="flex flex-col text-xl leading-10 mt-16">
+      <div className="flex flex-col text-xl leading-[2] mt-16">
         <p className="foot-heading text-4xl mb-5">CONTACT</p>
         <a
           href="mailto:sagoisinghjatin9951@gmail.com"

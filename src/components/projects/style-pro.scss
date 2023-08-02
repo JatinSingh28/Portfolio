@@ -18,7 +18,6 @@ $clr-bg: #1d1e22;
   inherits: false;
 }
 
-
 .card {
   background: #191c29;
   width: var(--card-width);
@@ -40,11 +39,11 @@ $clr-bg: #1d1e22;
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
 }
-.card:hover:before, .card:hover:after {
+.card:hover:before,
+.card:hover:after {
   animation: none;
   opacity: 0;
 }
-
 
 .card::before {
   content: "";
@@ -52,13 +51,16 @@ $clr-bg: #1d1e22;
   height: 102%;
   border-radius: 8px;
   background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
-    position: absolute;
-    z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
 }
 
 .card::after {
@@ -74,10 +76,13 @@ $clr-bg: #1d1e22;
   transform: scale(0.8);
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
-    opacity: 1;
-  transition: opacity .5s;
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
   animation: spin 2.5s linear infinite;
 }
 
@@ -134,3 +139,22 @@ a {
 
 // .project-container{
 // }
+
+// .custom-cursor {
+//   position: absolute;
+//   width: 24px;
+//   height: 24px;
+//   background-image: url("../../assets/cursor-image.png");
+//   /* Set the hotspot position (where the cursor will be considered as clicking) */
+//   /* Adjust the values as per your cursor design */
+//   background-position: 50% 50%;
+//   /* Hide the default cursor */
+//   cursor: none;
+// }
+
+// /* On hover, show the custom cursor */
+.custom-cursor:hover {
+  // background-image: none; /* Hide the SVG when not hovering */
+  cursor: url("../../assets/cursor-image.png"), auto; /* Use the SVG as cursor on hover */
+}
+
