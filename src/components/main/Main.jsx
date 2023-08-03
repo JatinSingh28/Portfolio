@@ -4,6 +4,7 @@ import Content from "./Content";
 import Footer from "../footer/Footer";
 import Projects from "../projects/ProjectsMain";
 import Skills from "../skills/skills";
+import Up from "./Up";
 import "./main.scss";
 
 export default function Main() {
@@ -14,6 +15,7 @@ export default function Main() {
       <Skills />
       <Projects />
       <Footer />
+      <Up/>
     </div>
   );
 }

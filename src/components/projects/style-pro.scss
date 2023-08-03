@@ -114,8 +114,14 @@ a {
 // }
 
 /* Custom CSS */
+.custom-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="background-color: black; border-radius: 50%; width: 20px; height: 20px;"><circle cx="10" cy="10" r="6" /></svg>'),
+    auto;
+}
+
+
 // .custom-cursor {
-//   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="background-color: black; border-radius: 50%; width: 20px; height: 20px;"><circle cx="10" cy="10" r="6" /></svg>'),
+//   cursor: url('../../assets/cursor-image-cropped-svg.svg'),
 //     auto;
 // }
 
@@ -153,8 +159,8 @@ a {
 // }
 
 // /* On hover, show the custom cursor */
-.custom-cursor:hover {
-  // background-image: none; /* Hide the SVG when not hovering */
-  cursor: url("../../assets/cursor-image.png"), auto; /* Use the SVG as cursor on hover */
-}
+// .custom-cursor:hover {
+//   // cursor: url("../../assets/cursor-image-cropped3.png"), auto;
+//   cursor: url("../../assets/cursor.png"), auto;
+// }
 

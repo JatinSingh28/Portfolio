@@ -6,6 +6,7 @@ import video from "../../assets/gradient-video2.mp4";
 import Timeline from "./Timeline.jsx";
 // import Scene from "./Scene";
 // import experienceData from "./experienceData";
+import Up from "./Up";
 import "./about.scss";
 
 export default function About() {
@@ -72,6 +73,7 @@ export default function About() {
       </div>
 
       <Footer />
+      <Up/>
     </div>
   );
 }

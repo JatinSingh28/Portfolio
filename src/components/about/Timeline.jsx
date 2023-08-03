@@ -29,14 +29,14 @@ export default function Timeline() {
           // markers: true,
         },
       });
-      // gsap.to(mask, {
-      //   width: "100%",
-      //   scrollTrigger: {
-      //     trigger: ".timeline-container",
-      //     start: "top left",
-      //     scrub: 1,
-      //   },
-      // });
+      gsap.to(mask, {
+        width: "100%",
+        scrollTrigger: {
+          trigger: ".timeline-container",
+          start: "top left",
+          scrub: 1,
+        },
+      });
     });
     return () => ctx.revert();
   }, []);
