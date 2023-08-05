@@ -4,6 +4,7 @@ import Main from "./components/main/Main";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+// import Project from "./components/projectss/project";
 
 function App() {
   return (
