@@ -44,20 +44,21 @@ export default function ProjectComp({
       backgroundColor: "rgba(255, 255, 255, 0.5)", // Adjust the opacity of the modal content here
       borderRadius: "8px",
       padding: "20px",
-      overflow: "hidden",
+      // overflow: "hidden",
     },
   };
   // console.log(name,image);
-  const [img, setImg] = useState();
-  function importLocal(path) {
-    return import(path);
-  }
-  useEffect(() => {
-    const res = importLocal(image);
-    res.then((newimage) => {
-      setImg(newimage.default);
-    });
-  }, [image]);
+  // const [img, setImg] = useState();
+  // function importLocal(path) {
+  //   return import(path);
+  // }
+  // useEffect(() => {
+  //   const res = importLocal(image);
+  //   res.then((newimage) => {
+  //     setImg(newimage.default);
+  //   });
+  // }, [image]);
+  console.log(image);
 
   return (
     <div
@@ -66,7 +67,7 @@ export default function ProjectComp({
     >
       <div className="flex justify-center align-center h-[65%]">
         <img
-          src={img}
+          src={image}
           className="h-full w-[80%] rounded-lg mt-4"
           alt="project-image"
         />
@@ -102,15 +103,17 @@ export default function ProjectComp({
                 </div>
               ))}
             </div>
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+            {github && (
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
                 ml-8 mt-5"
-              >
-                GitHub
-              </button>
-            </a>
-            {live && (
+                >
+                  GitHub
+                </button>
+              </a>
+            )}
+            {live && 
               <a href={live} target="_blank" rel="noopener noreferrer">
                 <button
                   className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
@@ -119,15 +122,17 @@ export default function ProjectComp({
                   Live Demo
                 </button>
               </a>
-            )}
-            <a href={video} target="_blank" rel="noopener noreferrer">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+            }
+            {video && (
+              <a href={video} target="_blank" rel="noopener noreferrer">
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
                 ml-8 mt-5"
-              >
-                Video
-              </button>
-            </a>
+                >
+                  Video
+                </button>
+              </a>
+            )}
           </div>
         </div>
 

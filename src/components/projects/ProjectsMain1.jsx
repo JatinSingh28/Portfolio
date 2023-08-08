@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import Project from "./ProjectComp";
 import "./style-pro.scss";
-import data from "./projectData";
+import data from "./webProjectData";
 import { motion } from "framer-motion";
 import cursorimg from "../../assets/cursor-image-cropped.png";
 
-export default function Projects() {
+export default function Projects1() {
   // const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   // const [cursorVariant, setCursorVariant] = useState("default");
   // useEffect(() => {
@@ -33,7 +33,7 @@ export default function Projects() {
 
   return (
     <div
-      className="container bg-black  h-fit pb-36 px-4 md:px-14 w-screen" 
+      className="bg-black  h-fit pb-36 px-4 md:px-14 w-screen"
       style={{ cursor: `url(${cursorimg}), auto` }}
     >
       {/* <img
@@ -43,7 +43,8 @@ export default function Projects() {
         className="cursor-img absolute h-28"
         alt="cursor"
       /> */}
-      <div className="md:grid md:grid-cols-3 pt-28 gap-8">
+      <h2 className="text-3xl md:text-4xl text-white pt-28 pb-5 font-bold">Web Development Projects</h2>
+      <div className="md:grid md:grid-cols-3 md:gap-8">
         {data.map((item, index) => (
           <Project
             key={index}

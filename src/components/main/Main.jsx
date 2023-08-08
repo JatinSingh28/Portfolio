@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Content from "./Content";
 import Footer from "../footer/Footer";
-import Projects from "../projects/ProjectsMain";
+import Projects1 from "../projects/ProjectsMain1";
+import Projects2 from "../projects/ProjectMain2";
+import Proj from "../projects/Proj";
 import Skills from "../skills/skills";
 import Up from "./Up";
 import "./main.scss";
@@ -13,7 +15,9 @@ export default function Main() {
       <Navbar />
       <Content />
       <Skills />
-      <Projects />
+      {/* <Proj/> */}
+      <Projects1 />
+      <Projects2 />
       <Footer />
       <Up/>
     </div>

@@ -3,7 +3,7 @@ import Navbar from "../navbar/Navbar";
 import ProjectComp from "./ProjectComp";
 import Footer from "../footer/Footer";
 import "./style-pro.scss";
-import data from "./projectData";
+import data from "./mlProjectData";
 
 export default function Projects() {
   return (
