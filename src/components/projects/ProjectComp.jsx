@@ -61,7 +61,7 @@ export default function ProjectComp({
 
   return (
     <div
-      className="pro-comp h-96 rounded-3xl text-white border-cyan-500 border-4"
+      className="pro-comp h-96 rounded-3xl text-white border-cyan-500 border-4 my-6 md:my-2"
       onClick={!isModalOpen ? openModal : dummyFunc}
     >
       <div className="flex justify-center align-center h-[65%]">

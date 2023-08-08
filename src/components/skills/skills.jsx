@@ -16,7 +16,7 @@ export default function Skills() {
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
         className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
       >
-        <div className="flex gap-5 px-9">
+        <div className="md:flex md:gap-5 px-9">
           <div className="w-full lgl:w-1/2">
             <div className="py-12 font-titleFont flex flex-col gap-4">
               <h2 className="text-3xl md:text-4xl font-bold">

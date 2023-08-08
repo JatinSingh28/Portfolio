@@ -9,7 +9,7 @@ import "./main.scss";
 
 export default function Main() {
   return (
-    <div className="main bg-black h-screen">
+    <div className="main bg-black md:h-screen">
       <Navbar />
       <Content />
       <Skills />

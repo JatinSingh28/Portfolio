@@ -9,3 +9,10 @@
   font-family: "Poppins", "Montserrat", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}

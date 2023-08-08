@@ -41,28 +41,27 @@ export default function About() {
             <video className="bg-video absolute " autoPlay loop muted>
               <source src={video} type="video/mp4" />
             </video>
-            <p className="about-heading-txt text-white text-9xl flex-grow pb-4">
-              I&apos;m Jatin Singh
+            <p className="about-heading-txt text-white text-5xl lg:text-9xl md:text-8xl md:flex-grow pb-4 lg:pl-80 md:pl-10">
+            &nbsp;I&apos;m Jatin Singh&nbsp; &nbsp;&nbsp;
             </p>
           </div>
-          <div className="img-about mt-20">
+          <div className="img-about mt-16">
             <div className="flex flex-col justify-center items-center ">
               <img
                 className="my-image rounded-t-full overflow-hidden object-cover"
                 src={img}
                 alt="my image"
               />
-              {/* <div className="h-12 w-96  bg-white">
-            <p></p>
-          </div> */}
+
             </div>
-            <div>
-              <p className="text-white text-7xl mt-10 leading-snug ">
-                Heyoo, This is a brief intro about me
+            <div className="px-5 lg:px-0 md:px-8">
+              <p className="text-white text-3xl md:text-5xl mt-5 md:mt-10 leading-snug ">
+              A seasoned ML Engineer, Full Stack Developer, and Competitive Programmer.
               </p>
-              <p className="text-white text-5xl mt-10 leading-tight">
-                This is more about me. Writing anything to fill up space for
-                now.
+              <p className="text-white text-2xl md:text-3xl mt-5 md:mt-8 leading-tight">
+              A seasoned ML Engineer, Full Stack Developer, and Competitive Programmer.
+              <br/>
+              Equipped with a diverse skill set that spans the realms of machine learning, software development, and algorithmic prowess, thrive on turning complex challenges into efficient solutions. 
               </p>
             </div>
           </div>

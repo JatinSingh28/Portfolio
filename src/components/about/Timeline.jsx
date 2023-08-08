@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import arrow from "../../assets/right-arrow.png";
 // import "./timeline.js";
 gsap.registerPlugin(ScrollTrigger);
 import video from "../../assets/gradient-video2.mp4";
@@ -133,13 +134,13 @@ export default function Timeline() {
                 <video className="bg-video absolute " autoPlay loop muted>
                   <source src={video} type="video/mp4" />
                 </video>
-                <p className="exp-txt text-white text-7xl flex-grow pb-4">
+                <p className="exp-txt text-white text-5xl md:text-7xl flex-grow pb-4 pl-7 md:pl-16">
                   Experience
                 </p>
               </div>
 
               <svg
-                className="pt-16 pb-16 pl-16"
+                className="pt-5 md:pt-16 pb-5 pl-16 "
                 viewBox="0 0 900 10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -173,62 +174,130 @@ export default function Timeline() {
                 </g>
               </svg>
             </div>
-            <div className="scroll-timeline flex">
+            <div className="scroll-timeline flex md:pl-10 md:pt-5">
               <section className="slides">
-                <span className="text-3xl uppercase">Advanced</span>
-                <h1 className="text-xl">Signify Elegance</h1>
+                <span className="text-2xl md:text-3xl uppercase">
+                  Machine Learning Intern{" "}
+                </span>
+                <div className="flex text-2xl gap-8 mb-4">
+                  <p>Stealth Startup</p>
+                  <p>Nov 2022 - Jan 2023 </p>
+                </div>
 
-                <div className="col">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
+                <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
+                  <ul className="list-disc text-white">
+                    <li>Created a hybrid recommendation system.</li>
+                    <li>
+                      Created a neural network to predict the user rating to
+                      different activities for the content based prediction.
+                    </li>
+                    <li>
+                      Used Neural Collaborative Filtering to find similar user
+                      and recommend based on user similarities.
+                    </li>
+                  </ul>
+                  {/* <p>
+                    <img
+                      src={arrow}
+                      className="h-6 inline-block pr-3"
+                      alt="arrow"
+                    />
+                    Created a hybrid recommendation system. <br />
+                    <img
+                      src={arrow}
+                      className="h-6 inline-block pr-3"
+                      alt="arrow"
+                    />
+                    Created a neural network to predict the user rating to
+                    different activities for the content based prediction.{" "}
+                    <br />
+                    <img
+                      src={arrow}
+                      className="h-6 inline-block pr-3"
+                      alt="arrow"
+                    />
+                    Used Neural Collaborative Filtering to find similar user and
+                    recommend based on user similarities.
+                  </p> */}
+                  <ul className="list-disc hidden md:block text-white">
+                    <li>Created a hybrid recommendation system.</li>
+                    <li>
+                      Created a neural network to predict the user rating to
+                      different activities for the content based prediction.
+                    </li>
+                    <li>
+                      Used Neural Collaborative Filtering to find similar user
+                      and recommend based on user similarities.
+                    </li>
+                  </ul>
                 </div>
               </section>
               <section className="slides">
-                <span className="anim">Advanced</span>
-                <h1 className="anim">Signify Elegance</h1>
+                <span className="anim text-3xl uppercase">Technical Lead</span>
+                <div className="anim flex text-2xl gap-8 mb-4">
+                  <p>CodeChef</p>
+                  <p>June 2023 - Present</p>
+                </div>
 
                 <div className="col anim ">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
+                  <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
+                    <ul className="list-disc text-white">
+                      <li>Created a hybrid recommendation system.</li>
+                      <li>
+                        Created a neural network to predict the user rating to
+                        different activities for the content based prediction.
+                      </li>
+                      <li>
+                        Used Neural Collaborative Filtering to find similar user
+                        and recommend based on user similarities.
+                      </li>
+                    </ul>
+                    <ul className="list-disc hidden md:block text-white">
+                      <li>Created a hybrid recommendation system.</li>
+                      <li>
+                        Created a neural network to predict the user rating to
+                        different activities for the content based prediction.
+                      </li>
+                      <li>
+                        Used Neural Collaborative Filtering to find similar user
+                        and recommend based on user similarities.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </section>
               <section className="slides mr-16">
-                <span className="anim">Advanced</span>
-                <h1 className="anim">Signify Elegance</h1>
+                <span className="anim text-3xl uppercase">Data Science</span>
+                <div className="anim flex text-2xl gap-8 mb-4">
+                  <p>Codesoft</p>
+                  <p>July 2023 - August 2023</p>
+                </div>
 
                 <div className="col anim ">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Egestas euismod nec
-                    sit sed massa turpis in. Sit praesent arcu leo lectus
-                    pellentesque. Ornare elit orci morbi volutpat. Ut fermentum
-                    lorem morbi quis risus amet urna. Urna egestas lorem.
-                  </p>
+                <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
+                    <ul className="list-disc text-white">
+                      <li>Created a hybrid recommendation system.</li>
+                      <li>
+                        Created a neural network to predict the user rating to
+                        different activities for the content based prediction.
+                      </li>
+                      <li>
+                        Used Neural Collaborative Filtering to find similar user
+                        and recommend based on user similarities.
+                      </li>
+                    </ul>
+                    <ul className="list-disc hidden md:block text-white">
+                      <li>Created a hybrid recommendation system.</li>
+                      <li>
+                        Created a neural network to predict the user rating to
+                        different activities for the content based prediction.
+                      </li>
+                      <li>
+                        Used Neural Collaborative Filtering to find similar user
+                        and recommend based on user similarities.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </section>
               `

@@ -33,7 +33,7 @@ export default function Projects() {
 
   return (
     <div
-      className="container bg-black  h-fit pb-36"
+      className="container bg-black  h-fit pb-36 px-4 md:px-14 w-screen" 
       style={{ cursor: `url(${cursorimg}), auto` }}
     >
       {/* <img
@@ -43,7 +43,7 @@ export default function Projects() {
         className="cursor-img absolute h-28"
         alt="cursor"
       /> */}
-      <div className="grid grid-cols-3 px-16 pt-28 gap-8">
+      <div className="md:grid md:grid-cols-3 pt-28 gap-8">
         {data.map((item, index) => (
           <Project
             key={index}
