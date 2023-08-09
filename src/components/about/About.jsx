@@ -55,7 +55,7 @@ export default function About() {
 
             </div>
             <div className="px-5 lg:px-0 md:px-8">
-              <p className="text-white text-3xl md:text-5xl mt-5 md:mt-10 leading-snug ">
+              <p className="text-3xl md:text-5xl mt-5 md:mt-10 leading-snug bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
               A seasoned ML Engineer, Full Stack Developer, and Competitive Programmer.
               </p>
               <p className="text-white text-2xl md:text-3xl mt-5 md:mt-8 leading-tight">

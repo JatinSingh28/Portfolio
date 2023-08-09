@@ -176,7 +176,7 @@ export default function Timeline() {
             </div>
             <div className="scroll-timeline flex md:pl-10 md:pt-5">
               <section className="slides">
-                <span className="text-2xl md:text-3xl uppercase">
+                <span className="text-2xl font-bold md:text-3xl uppercase bg-gradient-to-r from-blue-600 to-white bg-clip-text text-transparent">
                   Machine Learning Intern{" "}
                 </span>
                 <div className="flex text-2xl gap-8 mb-4">
@@ -233,41 +233,38 @@ export default function Timeline() {
                 </div>
               </section>
               <section className="slides">
-                <span className="anim text-3xl uppercase">Technical Lead</span>
+                <span className="anim font-bold text-3xl uppercase bg-gradient-to-r from-blue-600 to-white bg-clip-text text-transparent">Technical Lead</span>
                 <div className="anim flex text-2xl gap-8 mb-4">
                   <p>CodeChef</p>
                   <p>June 2023 - Present</p>
                 </div>
 
                 <div className="col anim ">
-                  <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
+                  <div className="col md:flex md:gap-6 text-2xl pl-3">
                     <ul className="list-disc text-white">
-                      <li>Created a hybrid recommendation system.</li>
+                      <li>Led the planning, execution, and management of numerous coding contests and hackathons, fostering a vibrant coding community and engaging participants from diverse backgrounds.</li>
                       <li>
-                        Created a neural network to predict the user rating to
-                        different activities for the content based prediction.
+                      Helped society members with their doubts in DSA and machine learning 
+
                       </li>
                       <li>
-                        Used Neural Collaborative Filtering to find similar user
-                        and recommend based on user similarities.
+                      Orchestrated successful on-site and virtual events, including tech talks, workshops, and networking sessions, aimed at nurturing the coding and tech community.
                       </li>
                     </ul>
                     <ul className="list-disc hidden md:block text-white">
-                      <li>Created a hybrid recommendation system.</li>
+                      <li>Spearheaded the management of Difficulty Level for coding problems, ensuring a balanced progression of challenges catering to both beginners and experienced coders.</li>
                       <li>
-                        Created a neural network to predict the user rating to
-                        different activities for the content based prediction.
+                      Collaborated with cross-functional teams to conceptualize contest themes, set problem statements, and design evaluation criteria, resulting in engaging and challenging competitions.
                       </li>
                       <li>
-                        Used Neural Collaborative Filtering to find similar user
-                        and recommend based on user similarities.
+                      In this role, I successfully combined my technical expertise, project management skills, and passion for coding to lead various initiatives that have enriched the coding community.
                       </li>
                     </ul>
                   </div>
                 </div>
               </section>
               <section className="slides mr-16">
-                <span className="anim text-3xl uppercase">Data Science Intern</span>
+                <span className="anim font-bold text-3xl uppercase bg-gradient-to-r from-blue-600 to-white bg-clip-text text-transparent">Data Science Intern</span>
                 <div className="anim flex text-2xl gap-8 mb-4">
                   <p>Codesoft</p>
                   <p>July 2023 - August 2023</p>

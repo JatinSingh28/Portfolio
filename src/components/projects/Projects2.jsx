@@ -15,47 +15,27 @@ const Projects2 = () => {
         <p className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent font-extrabold lg:text-6xl md:text-5xl text-2xl pb-6 ">
           Web Devlopment Projects
         </p>
-        {/* <Title
-          // title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
-          des="Web Development Projects"
-        /> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Real-time Chat Application"
+          des="Real-Time Chat App built on the robust foundation of the MERN (MongoDB, Express.js, React, Node.js) technology stack. Seamlessly connect with friends, family, or colleagues in real-time. "
           src={projectOne}
+          git="https://github.com/JatinSingh28/chat-app"
+          link="https://chat-app-mern28.netlify.app/"
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Google Docs Clone"
+          des="Revolutionize the way you work together on documents, enabling real-time updates and seamless synchronization among all contributors."
           src={projectTwo}
+          git="https://github.com/JatinSingh28/google-docs-clone"
         />
         <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Heart Failure Prediction Website"
+          des="Our innovative Heart Failure Prediction Website offers a user-friendly interface to assess your heart health risk."
           src={projectThree}
-        />
-        <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          git="https://github.com/JatinSingh28/Heart-Failure-deployed"
+          link="https://heart-failure-deployed.vercel.app/"
         />
       </div>
     </section>
