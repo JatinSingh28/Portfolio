@@ -5,7 +5,7 @@ import arr from "./count";
 
 export default function Skills() {
   return (
-    <div className="bg-black text-white ">
+    <div className="bg-black text-white pb-16">
       {/* {arr.map((item) => {
         <div
           className={`w-[${item.level}%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative`}
@@ -14,7 +14,7 @@ export default function Skills() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
-        className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+        className="w-full flex flex-col gap-10 "
       >
         <div className="md:flex md:gap-5 px-9">
           <div className="w-full lgl:w-1/2">
@@ -137,7 +137,7 @@ export default function Skills() {
             </div>
           </div>
 
-          <div className="w-full lgl:w-1/2">
+          <div className="w-full">
             <div className="py-12 font-titleFont flex flex-col gap-4">
               <h2 className="text-3xl md:text-4xl font-bold">
                 Machine Learning
