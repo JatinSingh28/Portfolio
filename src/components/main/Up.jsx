@@ -28,10 +28,10 @@ export default function Up() {
   }
 
   return (
-    <div className="fixed h-10 w-10 bottom-4 right-4 ">
+    <div className="fixed h-10 w-10 bottom-5 right-5 ">
       <img
         src={img}
-        className="h-10 w-10 cursor-pointer"
+        className="h-12 w-12 cursor-pointer"
         style={{ visibility: isVisible ? "visible" : "hidden" }}
         onClick={scrollToTop}
         alt="up-btn"
