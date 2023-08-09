@@ -42,9 +42,9 @@ export default function Content() {
             Hi. I&apos;m Jatin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
-        <div className=" flex text-xl md:text-4xl lg:text-5xl ">
+        <div className=" flex text-xl md:text-4xl lg:text-5xl h-14 md:h-20 lg:h-16">
           <p>A</p>{" "}
-          <span className="dynamic-txt ms-3 text-purple-500" ref={el} />
+          <span className="dynamic-txt ms-3 bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent" ref={el} />
         </div>
       </div>
       <div className="hero-display-container text-white">

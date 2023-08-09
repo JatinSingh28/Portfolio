@@ -267,7 +267,7 @@ export default function Timeline() {
                 </div>
               </section>
               <section className="slides mr-16">
-                <span className="anim text-3xl uppercase">Data Science</span>
+                <span className="anim text-3xl uppercase">Data Science Intern</span>
                 <div className="anim flex text-2xl gap-8 mb-4">
                   <p>Codesoft</p>
                   <p>July 2023 - August 2023</p>

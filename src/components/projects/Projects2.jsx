@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "./Title";
 // import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
 import projectOne from "../../assets/background.jpg";
