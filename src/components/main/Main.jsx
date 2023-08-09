@@ -2,11 +2,8 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Content from "./Content";
 import Footer from "../footer/Footer";
-// import Projects1 from "../projects/ProjectsMain1";
-// import Projects2 from "../projects/ProjectMain2";
-// import Proj from "../projects/Proj";
-import Projects from "../proj/Projects";
-import Projects2 from "../proj/Projects2";
+import Projects from "../projects/Projects";
+import Projects2 from "../projects/Projects2";
 import Skills from "../skills/skills";
 import Gradient from "../skills/Gradient";
 import Up from "./Up";
@@ -20,8 +17,6 @@ export default function Main() {
       <Skills />
       <Gradient/>
       <Projects />
-      {/* <Proj/> */}
-      {/* <Projects1 /> */}
       <Projects2 />
       <Footer />
       <Up />

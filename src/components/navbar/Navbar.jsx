@@ -11,7 +11,7 @@ export default function Navbar() {
   
   return (
     <div className="navbar absolute w-screen">
-      <div className="glassContainer flex gap-5 px-5 lg:gap-14 md:px-10 lg:px-16 mt-2 text-white text-2xl">
+      <div className="glassContainer flex gap-5 px-5 lg:gap-14 md:px-10 lg:px-16 mt-6 text-white text-2xl font-bold">
         <Link to="/" className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-colors duration-500">Home</Link>
         {/* <Link to="/projects">Work</Link> */}
         <Link to="/about" className="hover:bg-gradient-to-r hover:from-purple-500 hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-colors duration-500">About</Link>

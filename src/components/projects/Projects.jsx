@@ -1,44 +1,65 @@
-import React, { useState } from "react";
-import Navbar from "../navbar/Navbar";
-import ProjectComp from "./ProjectComp";
-import Footer from "../footer/Footer";
-import "./style-pro.scss";
-import data from "./mlProjectData";
+import React from "react";
+// import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import ProjectsCard from "./ProjectsCard";
+import projectOne from "../../assets/background.jpg";
+import projectTwo from "../../assets/background.jpg";
+import projectThree from "../../assets/background.jpg";
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <div className="proj-container bg-black  h-fit ">
-      <Navbar />
-
-      <div className="grid grid-cols-fluid md:grid md:grid-cols-3 px-16 md:gap-8  pt-28 pb-36 w-screen">
-        {data.map((item, index) => (
-          <ProjectComp
-            key={index}
-            name={item.name}
-            image={item.image}
-            images={item.images}
-            features={item.features}
-            github={item.github}
-            live={item.live}
-            vide={item.live}
-          />
-        ))}
+    <section
+      id="projects"
+      className="w-full bg-bodyColor text-lightText py-16 border-b-[1px] border-b-black px-10"
+    >
+      <div className="flex justify-center items-center text-center">
+        <p className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent font-extrabold lg:text-6xl md:text-5xl text-2xl pb-6">
+          Machine Learning Projects
+        </p>
+        {/* <Title
+          title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+          des="Machine Learning Projects"
+        /> */}
       </div>
-      {/* <div className="grid grid-cols-fluid md:grid md:grid-cols-3 px-16 md:gap-8  pt-28 pb-36 w-screen">
-        {data.map((item, index) => (
-          <ProjectComp
-            key={index}
-            name={item.name}
-            image={item.image}
-            images={item.images}
-            features={item.features}
-            github={item.github}
-            live={item.live}
-            vide={item.live}
-          />
-        ))}
-      </div> */}
-      <Footer />
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+        <ProjectsCard
+          title="SOCIAL MEDIA CLONE"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectOne}
+        />
+        <ProjectsCard
+          title="E-commerce Website"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectTwo}
+        />
+        <ProjectsCard
+          title="Chatting App"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectThree}
+        />
+        <ProjectsCard
+          title="SOCIAL MEDIA CLONE"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectThree}
+        />
+        <ProjectsCard
+          title="E-commerce Website"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectOne}
+        />
+        <ProjectsCard
+          title="Chatting App"
+          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          src={projectTwo}
+        />
+      </div>
+    </section>
   );
-}
+};
+
+export default Projects;
