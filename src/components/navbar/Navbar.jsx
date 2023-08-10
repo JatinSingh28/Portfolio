@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar absolute w-screen">
+    <div className="navbar absolute w-screen pb-3 shadow-[0_10px_20px_rgba(8,_112,_184,_0.7)]">
       <div className="glassContainer flex gap-5 px-5 lg:gap-14 md:px-10 lg:px-16 mt-6 text-white text-2xl font-bold">
         <Link
           to="/"

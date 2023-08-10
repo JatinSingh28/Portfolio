@@ -7,7 +7,7 @@ import live from "../../assets/live.png";
 
 const ProjectsCard = ({ title, des, src, git, link }) => {
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] hover:bg-gradient-to-b hover:from-purple-950 hover:to-gray-900 transition-colors duration-1000">
+    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] hover:bg-gradient-to-b hover:from-purple-800 hover:to-gray-900 transition-colors duration-1000">
       <div className="w-full h-60 overflow-hidden rounded-lg">
         <img
           className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"

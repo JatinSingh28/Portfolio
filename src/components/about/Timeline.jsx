@@ -186,7 +186,7 @@ export default function Timeline() {
 
                 <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
                   <ul className="list-disc text-white">
-                    <li>Created a hybrid recommendation system.</li>
+                    <li>Designed and implemented an innovative hybrid recommendation system that enhanced user engagement and satisfaction.</li>
                     <li>
                       Created a neural network to predict the user rating to
                       different activities for the content based prediction.
@@ -220,15 +220,14 @@ export default function Timeline() {
                     recommend based on user similarities.
                   </p> */}
                   <ul className="list-disc hidden md:block text-white">
-                    <li>Created a hybrid recommendation system.</li>
+                    <li>Implemented feature engineering strategies to extract relevant user and item features, contributing to more personalized recommendations.</li>
                     <li>
-                      Created a neural network to predict the user rating to
-                      different activities for the content based prediction.
+                    Presented technical insights and progress reports effectively, contributing to informed decision-making within the organization.
                     </li>
-                    <li>
+                    {/* <li>
                       Used Neural Collaborative Filtering to find similar user
                       and recommend based on user similarities.
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </section>
@@ -252,7 +251,7 @@ export default function Timeline() {
                       </li>
                     </ul>
                     <ul className="list-disc hidden md:block text-white">
-                      <li>Spearheaded the management of Difficulty Level for coding problems, ensuring a balanced progression of challenges catering to both beginners and experienced coders.</li>
+                      {/* <li>Spearheaded the management of Difficulty Level for coding problems, ensuring a balanced progression of challenges catering to both beginners and experienced coders.</li> */}
                       <li>
                       Collaborated with cross-functional teams to conceptualize contest themes, set problem statements, and design evaluation criteria, resulting in engaging and challenging competitions.
                       </li>
@@ -273,26 +272,24 @@ export default function Timeline() {
                 <div className="col anim ">
                 <div className="col md:grid md:grid-cols-2 text-2xl pl-3">
                     <ul className="list-disc text-white">
-                      <li>Created a hybrid recommendation system.</li>
+                      <li>Worked on various data science related projects.</li>
                       <li>
-                        Created a neural network to predict the user rating to
-                        different activities for the content based prediction.
+                        Proposed solutions of some advance problems like titanic dataset :)
                       </li>
                       <li>
-                        Used Neural Collaborative Filtering to find similar user
-                        and recommend based on user similarities.
+                        Worked on fraud detections models :))
                       </li>
                     </ul>
                     <ul className="list-disc hidden md:block text-white">
-                      <li>Created a hybrid recommendation system.</li>
-                      <li>
+                      <li>Worked with a large community of highly skilled programmers. :)</li>
+                      {/* <li>
                         Created a neural network to predict the user rating to
                         different activities for the content based prediction.
                       </li>
                       <li>
                         Used Neural Collaborative Filtering to find similar user
                         and recommend based on user similarities.
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

@@ -1,9 +1,8 @@
 import React from "react";
 // import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
-import projectOne from "../../assets/background.jpg";
-import projectTwo from "../../assets/background.jpg";
-import projectThree from "../../assets/background.jpg";
+
+import {chat,docs,heart} from "./Import";
 
 const Projects2 = () => {
   return (
@@ -20,20 +19,20 @@ const Projects2 = () => {
         <ProjectsCard
           title="Real-time Chat Application"
           des="Real-Time Chat App built on the robust foundation of the MERN (MongoDB, Express.js, React, Node.js) technology stack. Seamlessly connect with friends, family, or colleagues in real-time. "
-          src={projectOne}
+          src={chat}
           git="https://github.com/JatinSingh28/chat-app"
           link="https://chat-app-mern28.netlify.app/"
         />
         <ProjectsCard
           title="Google Docs Clone"
           des="Revolutionize the way you work together on documents, enabling real-time updates and seamless synchronization among all contributors."
-          src={projectTwo}
+          src={docs}
           git="https://github.com/JatinSingh28/google-docs-clone"
         />
         <ProjectsCard
           title="Heart Failure Prediction Website"
           des="Our innovative Heart Failure Prediction Website offers a user-friendly interface to assess your heart health risk."
-          src={projectThree}
+          src={heart}
           git="https://github.com/JatinSingh28/Heart-Failure-deployed"
           link="https://heart-failure-deployed.vercel.app/"
         />
